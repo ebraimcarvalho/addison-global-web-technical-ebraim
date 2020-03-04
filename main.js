@@ -50,6 +50,7 @@ function createElements(item) {
   const $p = document.createElement('p');
   const $button1 = document.createElement('button');
   const $button2 = document.createElement('button');
+  const $divisor = document.createElement('hr');
 
   $img.setAttribute('src', item.heroImageUrl);
   $h3.textContent = item.name;
@@ -62,6 +63,7 @@ function createElements(item) {
   $div.appendChild($p);
   $div.appendChild($button1);
   $div.appendChild($button2);
+  $div.appendChild($divisor);
 }
 
 initEvents();
